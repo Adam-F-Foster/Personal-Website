@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design
+    Template
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="js/swipebox-master/lib/jquery-2.1.0.min.js"></script>
+    <script src="js/swipebox-master/src/js/jquery.swipebox.js"></script>
+    <link rel="stylesheet" href="js/swipebox-master/src/css/swipebox.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "resume.html">Resume</a></li>
+                <li><a href = "projects.html">Projects</a></li>
+                <li><a href = "contact.html">Contact + About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <p>About Me</p>
+        <!-- div flexing and containing the javascript gallery -->
+        <div class="flexImage">
+            <a rel="g1" href="images/bday.jpg" class="swipebox" title="I turned 21 in August">
+                <img src ="images/bdayCropped.jpg" alt="image">
+            </a>
+            <a rel = "g1" href="images/kayak.jpg" class="swipebox" title="I enjoy hiking and kayaking and other outdoor activities">
+                <img src ="images/kayakCropped.jpg" alt="image">
+            </a>
+            <a rel = "g1" href="images/park.jpg" class="swipebox" title="I enjoy hiking and kayaking and other outdoor activities">
+                <img src ="images/parkCropped.jpg" alt="image">
+            </a>
+            <a rel = "g1" href="images/wild.jpg" class="swipebox" title="Wild Eggs is my favorite place to get brunch">
+                <img src ="images/wildCropped.jpg" alt="image">
+            </a>
+        </div>
+        <p>Here's how to contact me!</p>
+        <div class="flexed">
+            <!-- ul of my contact info -->
+            <ul>
+                <li><strong>Direct contacts</strong></li>
+                <li>affoster@iu.edu</li>
+                <li>317-431-8661</li>
+            </ul>
+            <ul>
+                <li><strong>Send me some mail!</strong></li>
+                <li><address>
+                    Adam Foster<br>
+                    2000 E 3rd St<br>
+                    Bloomington, IN, 47401
+                    </address>
+                </li>
+            </ul>
+            <ul>
+                <li><strong>How to find me</strong></li>
+                <li><a href = "#">Twitter</a></li>
+                <li><a href = "#">Facebook</a></li>
+                <li><a href = "#">Instagram</a></li>
+                <li><a href = "#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="social">
+        <a href="#"><i class = "fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class = "fa fa-facebook fa-2x"></i></a>
+        <a href="#"><i class = "fa fa-instagram fa-2x"></i></a>
+        <a href="#"><i class = "fa fa-linkedin-square fa-2x"></i></a>
+    </div>
+    <!-- javascript to support the gallery -->
+    <script type="text/javascript">
+        ;( function( $ ) {
+        
+            $( '.swipebox' ).swipebox();
+        
+        } )( jQuery );
+        </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* UTILITIES */
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* START YOUR STYLES HERE */
+body{
+  border: 1px solid fuchsia;
+  margin-top: -20px;
+  height: 1080px;
+}
+/* flexing the menu */
+.menu{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-family: "Roboto", "sans-serif";
+  font-weight: bold;
+  padding: 20px;
+  background-color: white;
+}
+/* making the menu inline and getting rid of bullets */
+nav ul li{
+  display: inline;
+  list-style-type: none;
+}
+.menu a{
+  padding: 10px;
+  margin: auto;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 24px;
+}
+/* making the menu links a different color when hovered on */
+a:hover{
+  opacity: 70%;
+}
+p{
+  margin: auto;
+  width: 100%;
+  padding: 40px;
+  font-size: 30px;
+  font-family: "Montserrat", "sans-serif";
+}
+/* flex */
+.social{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.social a{
+  padding-top: 150px;
+  width: 5%;
+  padding-bottom: 50px;
+}
+.main{
+  position: relative;
+}
+i{
+  color: black;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+
+/* i used media queries to adjust the width so the text wouldn't get too thin or too tall */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  body{
+    border: 1px solid green;
+  }
+  p{
+    font-size: 36px;
+  }
+  .main{
+    top: 100px;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  body{
+    border: 1px solid blue;
+  }
+  p{
+    width: 75%;
+    font-size: 40px;
+  }
+  .bold{
+    font-size: 72px;
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body{
+    border: 1px solid red;
+  }
+  .bold{
+    font-size: 80px;
+  }
+  
+  p{
+    width: 60%;
+    font-size: 48px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+
+} */
+
+
+/* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+/* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) {
+
+} */
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) {
+
+} */
+
+/* Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) {
+
+} */
+
+/* Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) {
+
+} */
+
+/* Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width */

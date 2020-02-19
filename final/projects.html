@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    I360 Web Design
+    Template
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="css/projects.css">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "resume.html">Resume</a></li>
+                <li><a href = "projects.html">Projects</a></li>
+                <li><a href = "contact.html">Contact + About</a></li>
+            </ul>
+        </nav>
+        <!-- div for each project -->
+        <div class="projects">
+            <p>My Projects</p>
+            <div class="project">
+                <p class="info">
+                    <span class="title"><strong>Minesweeper</strong></span><br><strong>Brief<br></strong>
+                    I recreated the Minesweeper game for INFO-I311, Application Development<br>
+                    <strong>Phase 1<br></strong>
+                    In Phase 1, I was responsible for creating a Minesweeper game from scratch<br>
+                    <strong>Phase 2<br></strong>
+                    In Phase 2, I was provided with another individual's code and finished the project using their established codebase<br>
+                    <strong>Result<br></strong>
+                    A successful recreation of the Minesweeper game with customizable board sizes and number of mines, along with best time records and win loss rates for each board size.
+                </p>
+            </div>
+            <div class="project">
+                <p class="info">
+                    <span class="title"><strong>Coffee Analysis</strong></span><br><strong>Brief<br></strong>
+                    I worked with a database of different coffee beans to analyze how different growing factors impacted flavor aspects<br>
+                    <strong>Code<br></strong>
+                    I used pandas to read in the csv file and then used varying machine learning modules to predict how certain variables would change flavor ratings and also analyze how closely related growing variables are to the flavor ratings.<br>
+                    <strong>Presentation<br></strong>
+                    I presented a poster with my hypotheses, information, and findings to the class. Many of the growing variables were strongly correlated with the flavor rating, although altitude and location were not.
+                </p>
+            </div>
+            <div class="project">
+                <p class="info">
+                    <span class="title"><strong>Handwriting Recognition</strong></span><br><strong>Brief<br></strong>
+                    I used the EMNIST handwriting dataset in order to train different machine learning algorithms to recognize handwriting provided through images<br>
+                    <strong>Code<br></strong>
+                    I used pandas to read in the EMNIST file while also using multiple machine learning modules, along with a self implemented KNN algorithm and analyzed the accuracies of each algorithm
+                    <strong>Presentation<br></strong>
+                    I presented my project to the class, which consisted of me drawing letters on my computer and submitting them to my program. I found that my KNN algorithm was in the middle of the pack, but the sklearn decision tree was the most accurate
+                </p>
+            </div>
+        </div>
+
+
+    </header>
+    <div class="social">
+        <a href="#"><i class = "fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class = "fa fa-facebook fa-2x"></i></a>
+        <a href="#"><i class = "fa fa-instagram fa-2x"></i></a>
+        <a href="#"><i class = "fa fa-linkedin-square fa-2x"></i></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* UTILITIES */
+  
+  /* hides an element on screen, but not from screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* no break */
+  .nobr {
+    white-space: nowrap;
+  }
+  
+  /* START YOUR STYLES HERE */
+  /* line height of 1.5em across page to make text easy to read and consistent font sizes and choices */
+  .resume{
+      font-family: "Roboto", sans-serif;
+      width: 70%;
+      margin: auto;
+  }
+  .resume ul{
+      margin: 0;
+  }
+  .resume li{
+      line-height: 1.5em;
+  }
+  .heading{
+      font-size: 24px;
+      line-height: 1.5em;
+  }
+  p.info{
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      line-height: 1.5em;
+      width: 100%;
+  }

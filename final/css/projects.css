@@ -1,0 +1,78 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* UTILITIES */
+  
+  /* hides an element on screen, but not from screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* no break */
+  .nobr {
+    white-space: nowrap;
+  }
+  
+  /* START YOUR STYLES HERE */
+  p.info{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    /* line height of 1.7em to space out the text to make it easier to read */
+    line-height: 1.7em;
+    width: 90%;
+    /* margin auto to center the text */
+    margin: auto;
+}
+.title{
+    font-size: 32px;
+}
+.project{
+    padding-bottom: 60px;
+}
+@media (min-width: 576px) { 
+    body{
+      border: 1px solid green;
+    
+    }
+  }
+  /* i used media queries to adjust the width of the project info so it didn't get too thin or tall in different viewing sizes  */
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    body{
+      border: 1px solid blue;
+    }
+    p.info{
+      width: 60%;
+    }
+    .bold{
+      font-size: 72px;
+    }
+  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 1200px) {
+    body{
+      border: 1px solid red;
+    }
+    .bold{
+      font-size: 80px;
+    }
+    
+    p.info{
+      width: 40%;
+    }
+  }

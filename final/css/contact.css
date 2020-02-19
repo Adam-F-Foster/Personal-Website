@@ -1,0 +1,50 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* UTILITIES */
+  
+  /* hides an element on screen, but not from screen readers */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  /* no break */
+  .nobr {
+    white-space: nowrap;
+  }
+  
+  /* START YOUR STYLES HERE */
+.flexed{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.flexed ul{
+    font-family: "Montserrat", "sans-serif";
+    line-height: 1.5em;
+    list-style-type: none;
+}
+.flexImage{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/* giving images curved edges and setting height, also giving additional margin */
+img{
+    border-radius: 5%;
+    height: 250px;
+    margin: 20px;
+}
